@@ -11,17 +11,17 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="../../duan1_web/img/anh0.jpg" class="d-block w-100" alt="...">
+                    <img src="../../duan1_web/img/anh0.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../../duan1_web/img/anh1.jpg" class="d-block w-100" alt="...">
+                    <img src="../../duan1_web/img/anh1.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../../duan1_web/img/anh2.jpg" class="d-block w-100" alt="...">
+                    <img src="../../duan1_web/img/anh2.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
@@ -31,12 +31,12 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../../duan1_web/img/anh4.jpg" class="d-block w-100" alt="...">
+                    <img src="../../duan1_web/img/anh4.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../../duan1_web/img/anh5.jpg" class="d-block w-100" alt="...">
+                    <img src="../../duan1_web/img/anh5.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>

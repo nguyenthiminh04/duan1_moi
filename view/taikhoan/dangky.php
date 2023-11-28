@@ -11,15 +11,17 @@
             <form action="index.php?act=dangky" method="post">
                 <div>
                     Email
-                    <input type="email" name="email" style="margin-top: 10px;" placeholder="Nhập email của bạn">
+                    <input type="email" name="email" style="margin-top: 10px;" placeholder="Nhập email của bạn" required>
                 </div>
                 <div>
                     Tên đăng nhập
-                    <input type="text" name="user" style="margin-top: 10px;" placeholder="Nhập tên đăng nhập">
+                    <input type="text" name="user" style="margin-top: 10px;" placeholder="Nhập tên đăng nhập"required minlength="3"maxlength="100"/>
                 </div>
                 Mật khẩu
                 <div>
-                    <input type="password" name="pass" style="margin-top: 10px;" placeholder="Nhập mật khẩu mới">
+                    <input type="password" name="pass" style="margin-top: 10px;" placeholder="Nhập mật khẩu mới" required 
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                    title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." />
                 </div>
                 <input type="submit" value="Đăng ký" name="dangky">
                 <input type="reset" value="Nhập lại">

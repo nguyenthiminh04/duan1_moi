@@ -32,7 +32,7 @@
                     <div class="contact__ios" style="position: absolute; right: 120px; top: 35px;">
                     <form action="index.php?act=dangky" method="POST">
                         <label class="switch" class="">
-                        <input type="submit" name="submit" value="Đăng ký/ Đăng nhập">
+                        <input type="submit" name="submit" value="Đăng ký/Đăng nhập">
                         </label>
                         <div style="width:100%; color: blue; font-size: 25px; display:flex; justify-content: center; align-items: center; padding: 10px;">
                 <?= (isset($successDangky) && $successDangky != "") ? $successDangky : "" ?>

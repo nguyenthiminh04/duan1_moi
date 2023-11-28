@@ -21,7 +21,7 @@
                                         <input type="hidden" name="price" value="<?= $price ?>">
                                         <input type="hidden" name="img" value="<?= $img ?>">
                                         <!-- <a class="add_cart" href="index.php?act=addTocart"></a> -->
-                                        <input type="submit" name="addtocart" class="add_cart" value="ADD TO CART">
+                                        <input type="submit" name="addtocart" class="add_cart" value="Thêm vào giỏ hàng">
                                     </form>
                                 </div>
                             </div>

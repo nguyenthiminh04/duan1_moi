@@ -1,4 +1,4 @@
-<div class="boxright" style="width:30%">
+<div class="boxright">
     <?php
         if(!isset($_SESSION['minhh'])) {
             ?>
@@ -30,17 +30,16 @@
                             extract($_SESSION['minhh']);
                         }
                     ?>
-                        Xin chào: <h4 style="color: gray"> <?= $user ?></h4>
+                        Xin chào: <h4 style="color: blue"> <?= $user ?></h4>
                     </div>
-                    
-                    <li style="margin-top: 14px; font-size: 18px" class="form_li"><a href="index.php?act=quenmk">Quên mật khẩu</a></li>
-                    <li  style=" font-size: 16px" class="form_li"><a href="index.php?act=edit_taikhoan">Cập nhật tài khoản</a></li>
-                    <li  style=" font-size: 18px" class="form_li"><a href="index.php?act=doimatkhau">Đổi mật khẩu</a></li>
+                    <li style="margin-top: 14px;" class="form_li"><a href="index.php?act=quenmk">Quên mật khẩu</a></li>
+                    <li class="form_li"><a href="index.php?act=edit_taikhoan">Cập nhật tài khoản</a></li>
+                    <li class="form_li"><a href="index.php?act=doimatkhau">Đổi mật khẩu</a></li>
                     <?php
                         // phần này check nếu tài khoản có role == 0 thì đó là tài khoản admin và cho <li class="form_li"><a href="admin/index.php">Đăng nhập admin</a></li>
                         if($role == 1) {
                             ?>
-                                <li style=" font-size: 18px" class="form_li"><a href="admin/index.php">Đăng nhập admin</a></li>
+                                <li class="form_li"><a href="admin/index.php">Đăng nhập admin</a></li>
                             <?php
                         }
                     ?>

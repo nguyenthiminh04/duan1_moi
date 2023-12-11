@@ -19,9 +19,14 @@
                 </div>
                 Mật khẩu
                 <div>
-                    <input type="password" name="pass" style="margin-top: 10px;" placeholder="Nhập mật khẩu mới" required 
+                    <input type="password" name="pass" style="margin-top: 10px;" placeholder="Nhập mật khẩu" required 
                     pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                     title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." />
+                    
+                </div>
+                Nhập lại mật khẩu
+                <div>
+                    <input type="password" name="repass" style="margin-top: 10px;"value="" placeholder="Nhập lại mật khẩu>" required >
                 </div>
                 <input type="submit" value="Đăng ký" name="dangky">
                 <input type="reset" value="Nhập lại">

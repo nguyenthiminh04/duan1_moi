@@ -192,38 +192,45 @@
             case "bill":
                 include "view/giohang/bill.php";
                 break;
-            case "billconfirm":
-                $idbill = null;
-                if(isset($_POST["dongydathang"]) && ($_POST["dongydathang"])) {
-                    if(isset($_SESSION['minhh'])) {
-                        $iduser = $_SESSION['minhh']['id'];
-                    } else {
-                        $iduser = 0;
-                    }
+            // case "success":
+            //     $idbill = null;
+            //     if(isset($_POST["dongydathang"]) && ($_POST["dongydathang"])) {
+            //         if(isset($_SESSION['minhh'])) {
+            //             $iduser = $_SESSION['minhh']['id'];
+            //         } else {
+            //             $iduser = 0;
+            //         }
 
-                    $name = $_POST['name'];
-                    $email = $_POST['email'];
-                    $address = $_POST['address'];
-                    $tel = $_POST['tel'];
-                    $pttt = $_POST['pttt'];
-                    $ngaydathang = date('h:i:sa d/m/Y');
-                    $tongdonhang = tongdonhang();
+            //         $name = $_POST['name'];
+            //         $email = $_POST['email'];
+            //         $address = $_POST['address'];
+            //         $tel = $_POST['tel'];
+            //         $pttt = $_POST['pttt'];
+            //         $ngaydathang = date('h:i:sa d/m/Y');
+            //         $tongdonhang = tongdonhang();
 
-                    $idbill = insert_bill($iduser,$name, $email, $address, $tel, $pttt, $ngaydathang, $tongdonhang);
-                    // insert into cart với $_SESSION['mycart'] và $idbil
+            //         $idbill = insert_bill($iduser,$name, $email, $address, $tel, $pttt, $ngaydathang, $tongdonhang);
+            //         // insert into cart với $_SESSION['mycart'] và $idbil
 
-                    foreach($_SESSION['mycart'] as $cart) {
-                        insert_cart($_SESSION['minhh']['id'],$cart[0],$cart[2],$cart[1],$cart[3],$cart[4],$cart[5],$idbill);
-                    }
+            //         foreach($_SESSION['mycart'] as $cart) {
+            //             insert_cart($_SESSION['minhh']['id'],$cart[0],$cart[2],$cart[1],$cart[3],$cart[4],$cart[5],$idbill);
+            //         }
 
-                    $_SESSION['cart'] = [];
-                }
+            //         $_SESSION['cart'] = [];
+            //     }
 
-                $listbill = loadone_bill($idbill);
-                $listbill_chitiet = loadone_cart($idbill);
+            //     $listbill = loadone_bill($idbill);
+            //     $listbill_chitiet = loadone_cart($idbill);
                 
-                include "view/giohang/billconfirm.php";
-                break;
+            //     include "success.php";
+            //     break;
+                // case "success":
+                //     if (isset($_SESSION['success'])) {
+                //         include 'success.php';
+                //     } else {
+                //         header("Location: index.php");
+                //     }
+                //     break;
             case "gioithieu":
                 include "view/gioithieu.php";
                 break;

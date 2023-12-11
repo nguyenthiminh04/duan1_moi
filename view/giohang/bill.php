@@ -1,6 +1,6 @@
 <main class="catalog mb boxcenter" style="margin-top: 20px;">
     <div class="boxleft" style="width:100%;">
-        <form action="index.php?act=billconfirm" method="post">
+        <form action="success.php" method="post">
             <div class="header_admin" style="margin-bottom: 20px;">
                 <h2>THÔNG TIN ĐẶT HÀNG</h2>
             </div>
@@ -71,7 +71,7 @@
                 </table>
             </div>
 
-            <a style="margin-right: 10px;"><button type="submit" name="dongydathang" class="btn btn-success">ĐỒNG Ý ĐẶT HÀNG</button></a>
+            <a  href="success.php"style="margin-right: 10px;"><button type="submit" name="dongydathang" class="btn btn-success">ĐỒNG Ý ĐẶT HÀNG</button></a>
         </form>
         </div>
     </div>

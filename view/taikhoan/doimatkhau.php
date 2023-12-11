@@ -11,14 +11,16 @@
             <form action="index.php?act=doimatkhau" method="post">
                 <div>
                     Mật khẩu mới
-                    <input type="password" name="pass" value="<?= (!empty($passdoi)) ? $passdoi : "" ?>" placeholder="Nhập mật khẩu">
+                    <input type="password" name="pass" value="<?= (!empty($passdoi)) ? $passdoi : "" ?>" placeholder="Nhập mật khẩu" required
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                    title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." />
                     <span style="color: red;">
                         <?= isset($errPass) ? $errPass : "" ?>
                     </span>
                 </div>
                 <div>
                     Nhập lại mật khẩu mới
-                    <input type="password" value="<?= (!empty($passnew)) ? $passnew : "" ?>" name="passnew" placeholder="Nhập mật khẩu">
+                    <input type="password" value="<?= (!empty($passnew)) ? $passnew : "" ?>" name="passnew" placeholder="Nhập mật khẩu" required>
                     <span style="color: red;">
                         <?= isset($errPassnew) ? $errPassnew : "" ?>
                     </span>

@@ -19,22 +19,22 @@
                 }
             ?>
 
-            <div class="mb" style="border: 1px solid #ccc; border-radius:5px; padding: 30px;">
+            <div class="mb" style="border: 1px solid #ccc; border-radius:5px; padding: 30px;" >
                 <div class="group__dathang">
                     <span>Người đặt hàng</span>
-                    <input type="text" name="name" value="<?= $name ?>" class="form-control">
+                    <input type="text" name="name" value="<?= $name ?>" class="form-control" required="Bạn cần nhập đủ thông tin!">
                 </div>
                 <div class="group__dathang">
                     <span>Địa chỉ</span>
-                    <input type="text" name="address" value="<?= $address ?>" class="form-control">
+                    <input type="text" name="address" value="<?= $address ?>" class="form-control" required>
                 </div>
                 <div class="group__dathang">
                     <span>Email</span>
-                    <input type="email" name="email" value="<?= $email ?>" class="form-control">
+                    <input type="email" name="email" value="<?= $email ?>" class="form-control" required>
                 </div>
                 <div class="group__dathang">
                     <span>Điện thoại</span>
-                    <input type="text" name="tel" value="<?= $tel ?>" class="form-control">
+                    <input type="text" name="tel" value="<?= $tel ?>" class="form-control" required>
                 </div>
             </div>
 
@@ -43,18 +43,18 @@
             </div>
             <div class="mb" style="border: 1px solid #ccc; border-radius:5px; padding: 20px;">
                 <div class="group__dathang2">
-                    <input type="radio" value="1" name="pttt">
-                    <img width="50px" src="../../tranvietanh_duanmau/img/cod.png" alt="">
+                    <input type="radio" value="1" name="pttt" required="Bạn cần chọn hình thức thanh toán">
+                    <img width="50px" src="../../duan1_web/img/cod.png" alt="">
                     <span>Thanh toán khi nhận hàng</span>
                 </div>
                 <div class="group__dathang2">
-                    <input type="radio" value="2" name="pttt">
-                    <img width="50px" src="../../tranvietanh_duanmau/img/atm.png" alt="">
+                    <input type="radio" value="2" name="pttt" required>
+                    <img width="50px" src="../../duan1_web/img/atm.png" alt="">
                     <span>Thanh toán ATM</span>
                 </div>
                 <div class="group__dathang2">
-                    <input type="radio" value="3" name="pttt">
-                    <img width="50px" src="../../tranvietanh_duanmau/img/ol.png" alt="">
+                    <input type="radio" value="3" name="pttt" required>
+                    <img width="50px" src="../../duan1_web/img/ol.png" alt="">
                     <span>Thanh toán online</span>
                 </div>
             </div>

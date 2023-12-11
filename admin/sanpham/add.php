@@ -30,19 +30,19 @@
             </div>
             <div class="row2 mb10 form_content_container">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Tên sản phẩm</label> <br>
-                <input type="text" style="height: 40px;" name="tensanpham" placeholder="Nhập vào tên sản phẩm">
+                <input type="text" style="height: 40px;" name="tensanpham" placeholder="Nhập vào tên sản phẩm" required>
             </div>
             <div class="row2 mb10">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Giá sản phẩm</label> <br>
-                <input type="text" style="height: 40px;" name="gia" placeholder="Nhập vào giá">
+                <input type="text" style="height: 40px;" name="gia" placeholder="Nhập vào giá" required>
             </div>
             <div class="row2 mb10">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Ảnh sản phẩm</label> <br>
-                <input type="file" class="form-control" name="image" style="height: 40px;" name="tenloai" placeholder="Nhập vào tên">
+                <input type="file" class="form-control" name="image" style="height: 40px;" name="tenloai" placeholder="Nhập vào tên" required>
             </div>
             <div class="row2 mb10">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Mô tả sản phẩm</label> <br>
-                <textarea class="form-control" placeholder="Nhập mô tả của bạn" name="mota"  cols="20" rows="10"></textarea>
+                <textarea class="form-control" placeholder="Nhập mô tả của bạn" required name="mota"  cols="20" rows="10"></textarea>
             </div>
             <div>
                 <input class="mr20" type="submit" name="themsanpham" value="THÊM MỚI">

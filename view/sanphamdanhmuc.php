@@ -3,14 +3,26 @@
         <div style="margin:25px; font-size:25px;border:2px solid #000; padding: 10px;">
             Danh Mục: <?php echo $list_sanphamdanhmuc; ?>
         </div>
-        <div class="items">
+        <div class="items" style="grid-template-columns: repeat(5, 9fr); gap:5px;">
             <?php
                 foreach($dssp as $sp) {
                     extract($sp);
                     ?>
                         <div class="box_items">
+                        <style>
+                                 .item__prd {
+                                        background: linear-gradient( -100deg, #958b8b, rgb(93 89 87) ) !important;
+                                }
+                                .box_items .item_name {
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                }
+                            </style>
                             <div class="box_items_img">
                                 <img style=" padding: 10px;" src="upload/<?= $img ?>" alt="">
+                                <div class="bg__banner_logo" style="position: absolute; top: 0;">
+                                <img src="../../duan1_web/img/salew.webp" height="100px" alt="">
+                            </div>
                                 <div class="add" href="">
                                     <h2><a class="a__click" href="index.php?act=sanphamct&idsp=<?= $id ?>"><?= $name ?></a></h2>
                                     <h3><?= number_format($price, 0, ',', '.'); ?> VNĐ</h3>

@@ -56,10 +56,27 @@
                 <img src="../../duan1_web/img/s2.webp" style="width:100%;" alt="">
             </div>
         </div> -->
+        <style>
+                .spgoiy {
+    text-align: center;
+    margin: 40px 0;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    padding-top: 15px;
+    border-radius: 5px;
+    background: linear-gradient( -90deg, rgb(242 20 20), rgb(248 120 43 / 97%) ) !important;
+}
+    .item__prd {
+        background: linear-gradient( -100deg, #958b8b, rgb(93 89 87) ) !important;
+}.box_items .item_name {
+    font-size: 15px;
+    font-weight: bold;
+}
+        </style>
         <div class="spgoiy">
             <h2>TẤT CẢ SẢN PHẨM</h2>
         </div>
-        <div class="items">
+        <div class="items" style="grid-template-columns: repeat(5, 10fr); gap:5px;">
             <?php
             foreach ($load_sanpham as $sp) {
                 extract($sp);
@@ -82,7 +99,7 @@
                                 <input type="hidden" name="price" value="<?= $price ?>">
                                 <input type="hidden" name="img" value="<?= $img ?>">
                                 <!-- <a class="add_cart" href="index.php?act=addTocart"></a> -->
-                                <input type="submit" name="addtocart" class="add_cart" value="ADD TO CART">
+                                <input type="submit" name="addtocart" class="add_cart" value="Thêm vào giỏ hàng">
                             </form>
                         </div>
                     </div>
@@ -99,9 +116,9 @@
             </div>
         </div> -->
         <div class="spgoiy">
-            <h2>Thịt Heo</h2>
+            <h2>TRÁI CÂY TƯƠI</h2>
         </div>
-        <div class="items">
+        <div class="items" style="grid-template-columns: repeat(5, 1fr); gap:5px;">
             <?php
             foreach ($loadall_laptop_theoten as $sp) {
                 extract($sp);
@@ -124,7 +141,7 @@
                                 <input type="hidden" name="price" value="<?= $price ?>">
                                 <input type="hidden" name="img" value="<?= $img ?>">
                                 <!-- <a class="add_cart" href="index.php?act=addTocart"></a> -->
-                                <input type="submit" name="addtocart" class="add_cart" value="ADD TO CART">
+                                <input type="submit" name="addtocart" class="add_cart" value="Thêm vào giỏ hàng">
                             </form>
                         </div>
                     </div>
@@ -135,47 +152,11 @@
             }
             ?>
         </div>
+        
         <div class="spgoiy">
-            <h2>Thịt Bò</h2>
+            <h2>THỊT HEO</h2>
         </div>
-        <div class="items">
-            <?php
-            foreach ($loadall_iphone_theoten as $sp) {
-                extract($sp);
-            ?>
-                <div class="box_items">
-                    <div class="box_items_img">
-                        <div style="position: relative;">
-                            <img style="padding: 10px;" src="upload/<?= $img ?>" alt="">
-                            <div class="bg__banner_logo" style="position: absolute; top: 0;">
-                                <img src="../../duan1_web/img/salew.webp" height="100px" alt="">
-                            </div>
-                        </div>
-                        <div class="add" href="">
-                            <h2><a class="a__click" href="index.php?act=sanphamct&idsp=<?= $id ?>"><?= $name ?></a></h2>
-                            <h3><?= number_format($price, 0, ',', '.'); ?> VNĐ</h3>
-                            
-                            <form action="index.php?act=addtocart" method="post">
-                                <input type="hidden" name="id" value="<?= $id ?>">
-                                <input type="hidden" name="name" value="<?= $name ?>">
-                                <input type="hidden" name="price" value="<?= $price ?>">
-                                <input type="hidden" name="img" value="<?= $img ?>">
-                                <!-- <a class="add_cart" href="index.php?act=addTocart"></a> -->
-                                <input type="submit" name="addtocart" class="add_cart" value="ADD TO CART">
-                            </form>
-                        </div>
-                    </div>
-                    <a class="item__prd item_name" href="index.php?act=sanphamct&idsp=<?= $id ?>"><?= $name ?></a>
-                    <p class="price"><?= number_format($price, 0, ',', '.'); ?> VNĐ</p>
-                </div>
-            <?php
-            }
-            ?>
-        </div>
-        <div class="spgoiy">
-            <h2>Trái cây</h2>
-        </div>
-        <div class="items">
+        <div class="items" style="grid-template-columns: repeat(5, 1fr); gap:5px;">
             <?php
             foreach ($loadall_pc_theoten as $sp) {
                 extract($sp);
@@ -198,7 +179,7 @@
                                 <input type="hidden" name="price" value="<?= $price ?>">
                                 <input type="hidden" name="img" value="<?= $img ?>">
                                 <!-- <a class="add_cart" href="index.php?act=addTocart"></a> -->
-                                <input type="submit" name="addtocart" class="add_cart" value="ADD TO CART">
+                                <input type="submit" name="addtocart" class="add_cart" value="Thêm vào giỏ hàng">
                             </form>
                         </div>
                     </div>

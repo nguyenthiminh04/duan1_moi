@@ -20,11 +20,12 @@
             </div>
             <div class="row2 mb10 form_content_container">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Email</label> <br>
-                <input type="email" class="form-control" style="height: 40px;" name="email" placeholder="Nhập email">
+                <input type="email" class="form-control" style="height: 40px;" name="email" placeholder="Nhập email" required>
             </div>
             <div class="row2 mb10">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Tên tài khoản</label> <br>
-                <input type="text" class="form-control" style="height: 40px;" name="user" placeholder="Nhập tài khoản">
+                <input type="text" class="form-control" style="height: 40px;" name="user" placeholder="Nhập tài khoản" required
+                minlength="3" maxlength="100" />
             </div>
             <div class="row2 mb10">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Địa chỉ</label> <br>
@@ -32,11 +33,13 @@
             </div>
             <div class="row2 mb10">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Số điện thoại</label> <br>
-                <input type="text" class="form-control" style="height: 40px;" name="tel" placeholder="Nhập số điện thoại">
+                <input type="text" class="form-control" style="height: 40px;" name="tel" placeholder="Nhập số điện thoại" required>
             </div>
             <div class="row2 mb10">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Mật khẩu</label> <br>
-                <input type="password" class="form-control" style="height: 40px;" name="pass" placeholder="Nhập mật khẩu">
+                <input type="password" class="form-control" style="height: 40px;" name="pass" placeholder="Nhập mật khẩu" required
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+    title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." />
             </div>
             <div>
                 <input class="mr20" type="submit" name="themtaikhoan" value="THÊM MỚI TÀI KHOẢN">

@@ -220,7 +220,7 @@
                 }
 
                 $listbill = loadone_bill($idbill);
-                // $listbill_chitiet = loadone_cart($idbill);
+                $listbill_chitiet = loadone_cart($idbill);
                 
                 include "view/giohang/billconfirm.php";
                 break;

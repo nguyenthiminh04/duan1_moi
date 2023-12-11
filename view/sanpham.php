@@ -1,11 +1,21 @@
 <main class="catalog mb boxcenter">
     <div class="boxleft" style="width:100%;">
-        <div class="items">
+        <div class="items" style="grid-template-columns: repeat(5, 9fr); gap:5px;">
             <?php
                 foreach($load_sanpham as $sp) {
                     extract($sp);
                     ?>
+
                         <div class="box_items">
+                            <style>
+                                 .item__prd {
+                                        background: linear-gradient( -100deg, #958b8b, rgb(93 89 87) ) !important;
+                                }
+                                .box_items .item_name {
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                }
+                            </style>
                             <div class="box_items_img">
                                 <img style="padding: 10px;" src="upload/<?= $img ?>" alt="">
                                 <div class="add" href="">

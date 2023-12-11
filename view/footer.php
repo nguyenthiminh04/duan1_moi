@@ -3,10 +3,10 @@
     <div id="footer">
         <div class="footer-left">
             <div class="footer-logo">
-                <img src="./img/FPTShop_logo.jpg" alt="" />
+                <img src="./img/logowinmart.png" alt="" />
             </div>
             <div class="card_1">
-                <h3>CÔNG TY ĐIỆN TỬ FPT SỐ 1 VIỆT NAM</h3>
+                <h3>SIÊU THỊ THỰC PHẨM TƯƠI NGON HÀNG ĐẦU VIỆT NAM</h3>
                 <div>
                     <i class="fa-sharp fa-solid fa-location-pin"></i>
                     <p>
@@ -21,7 +21,7 @@
 
                 <div>
                     <i class="fa-solid fa-envelope"></i>
-                    <p>info@tocotocotea.com</p>
+                    <p>winmart@gmail.com</p>
                 </div>
 
                 <p>Số ĐKKD: 0106341306. Ngày cấp: 16/03/2017.</p>
@@ -36,22 +36,22 @@
 
                 <div class="images">
                     <div class="image">
-                        <img src="./img/anh4.jpg" alt="" />
+                        <img src="./img/anh4.png" alt="" />
                     </div>
                     <div class="image">
-                        <img src="./img/anh1.jpg" alt="" />
+                        <img src="./img/anh1.png" alt="" />
                     </div>
                 </div>
 
                 <div class="image_3 image">
-                    <img src="./img/anh2.jpg" alt="" />
+                    <img src="./img/anh2.png" alt="" />
                 </div>
             </div>
         </div>
         <div class="footer-right">
             <div class="card_2">
-                <h3>VỀ CHÚNG TÔI</h3>
-                <a href="#">Giới thiệu về TocoToco</a>
+                <h3>TIN TỨC</h3>
+                <a href="#">Giới thiệu về WinMart</a>
                 <a href="gioithieu.html">Nhượng quyền</a>
                 <a href="">Tin tức khuyến mại</a>
                 <a href="">Cửa hàng</a>
@@ -65,7 +65,6 @@
                 <a href="#">Vận chuyển giao nhận</a>
                 <a href="#">Đổi trả và hoàn tiền</a>
                 <a href="#">Bảo vệ thông tin cá nhân</a>
-                <a href="#">Bảo trì, bảo hành</a>
             </div>
         </div>
     </div>

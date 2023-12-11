@@ -33,7 +33,5 @@
             ?>
         </div>
     </div>
-    <?php
-        include "boxright.php";
-    ?>
+
 </main>

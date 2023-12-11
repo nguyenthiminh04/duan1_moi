@@ -35,7 +35,6 @@
                                     <td><?= $noidung ?></td>
                                     <td><?= date("d/m/Y h:i:s", strtotime($ngaybinhluan)) ?></td>
                                     <td>
-                                        <a href="index.php?act=suabinhluan&idbl=<?= $id ?>&idtk=<?= $idtk ?>" class="btn btn-success">Sửa</a> 
                                         <a onclick="return confirm('Bạn có chắc chắn muốn xóa bình luận này không?')" href="index.php?act=xoabinhluan&idbl=<?= $id ?>&idtk=<?= $idtk ?>" class="btn btn-danger">Xóa</a>
                                     </td>
                                 </tr>

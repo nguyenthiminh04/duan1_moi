@@ -3,8 +3,10 @@ function pdo_get_connection(){
     $servername = "localhost";
     $username = "root";
     $password = "";
-    try {
-        $conn = new PDO("mysql:host=$servername;dbname=duan1nhom5", $username, $password);
+    $database = "duan1nhom5";
+  
+  try {
+    $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     } catch(PDOException $e) {

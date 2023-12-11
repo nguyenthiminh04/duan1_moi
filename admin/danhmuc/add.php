@@ -21,7 +21,7 @@
             </div> -->
             <div class="row2 mb10">
                 <label style="margin-bottom: 20px; color:#000;">TÊN DANH MUC</label> <br>
-                <input type="text" style="height: 40px;" name="tenloai" placeholder="Nhập vào tên danh mục">
+                <input type="text" style="height: 40px;" name="tenloai" placeholder="Nhập vào tên danh mục" required>
             </div>
             <div>
                 <input type="submit" name="themmoi" value="THÊM DANH MỤC">

@@ -12,6 +12,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../../duan1_web/js/main.js"></script>
+    <style>
+        #totalProduct{
+            color: #fff;
+            background-color:red;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        header {
+           background: linear-gradient( -100deg, #fd7154, rgb(247 46 46) ) !important;
+        }
+        .search__menu{
+            background: linear-gradient(-100deg, #f70101, rgb(251 30 30)) !important;
+        }
+        .header__menu_nav a {
+        text-decoration: none;
+        color: white !important;
+        text-transform: uppercase;
+        display: block !important;
+        padding: 16px 20px;
+}
+    </style>
 </head>
 
 <body>
@@ -19,20 +41,20 @@
         <!-- BIGIN HEADER -->
         <header>
             <div class="boxcenter">
-                <div class="mb header header__menu_nav roayy search__menu" style="position: relative;">
-                    <div style="display:flex;">
-                        <img src="../../duan1_web/img/logowinmart.png" alt="">
+                <div class="mb header header__menu_nav roayy search__menu">
+                    <div style="display:flex; width:100%; background-color: red;" >
+                        <img src="../../duan1_web/img/logo-d4438e0bbf0ee4be0ab667eb391c2bad.png" alt="">
                     </div>
                     <div class="box_search">
                         <form action="index.php?act=viewsearch" method="POST">
                             <input type="text" class="input__search_header" name="tukhoa" id="" placeholder="Sale 50% cho khách hàng đầu tiên">
-                            <input type="text" class="submit__search" name="submit" value="Tìm kiếm">
+                            <input type="submit" class="submit__search" name="submit" value="Tìm kiếm">
                         </form>
                     </div>
-                    <div class="contact__ios" style="position: absolute; right: 120px; top: 35px;">
+                    <div class="contact__ios" style="position: absolute; right: 120px; top: 10px; border-radius: 20px;" >
                     <form action="index.php?act=dangky" method="POST">
-                        <label class="switch" class="">
-                        <input type="submit" name="submit" value="Đăng ký/Đăng nhập">
+                        <label class="switch" style="margin-top:-300px;">
+                        <input type="submit" name="submit" value="Hội viên" style="border-radius:50%; margin-top: -100px; width:75px; height:75px; color: white;background-color:red;border: 0.1875em solid white;font-weight: bold; font-size:15px;font-family:Georgia">
                         </label>
                         <div style="width:100%; color: blue; font-size: 25px; display:flex; justify-content: center; align-items: center; padding: 10px;">
                 <?= (isset($successDangky) && $successDangky != "") ? $successDangky : "" ?>
@@ -40,7 +62,7 @@
             </form>
                     </div>                    
                 </div>
-                <div class="header__menu_nav hd_navmenu" style="margin-top: 50px;">
+                <div class="header__menu_nav hd_navmenu" style="margin-top: 40px; background-color: gray; width: 100%; padding-left:20px;">
                     <ul>
                         <li class="dropdown">
                             <a class="dropdownbtn" href="../../duan1_web/">Trang chủ</a>
@@ -82,6 +104,7 @@
                         </li>
                         <li class="dropdown">
                             <a class="dropdownbtn" href="index.php?act=addtocart">Giỏ Hàng</a>
+        
                         </li>
                     </ul>
                 </div>

@@ -186,28 +186,6 @@
                     include "binhluan/listbinhluan.php";
                 }
                 break;
-            case "suabinhluan":
-                if(isset($_GET['idbl']) && ($_GET['idbl'] > 0)) {
-                    $idbl = $_GET['idbl'];
-                    $idtk = $_GET['idtk'];
-                    $suabinhluan = sua_binhluan($idbl);
-                    include "binhluan/updatebinhluan.php";
-                } else {
-                    $idbl = "";
-                }
-                break;
-            case "updateBinhluan":
-                if(isset($_POST['suabinhluan']) && ($_POST['suabinhluan'])) {
-                    $id = $_POST['id'];
-                    $noidung = $_POST['noidung'];
-                    $idtk = $_GET['idtk'];
-                    date_default_timezone_set('Asia/Ho_Chi_Minh');
-                    $ngaybinhluan = date("Y-m-d H:i:s");
-
-                    update_binhluan($noidung, $ngaybinhluan, $id);
-
-                    header('location: index.php?act=danhsachbinhluan&idtk='.$idtk);
-                }
                 break;
             case "xoabinhluan":
                 if(isset($_GET['idbl']) && ($_GET['idbl'] > 0)) {

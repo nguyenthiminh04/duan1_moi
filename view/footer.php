@@ -1,4 +1,11 @@
 <!-- FOOTER -->
+<style>
+    .footer-left {
+    padding-left: 12%;
+    align-items: center;
+    width: 60%;
+}
+</style>
 <footer class="box_footer row mb demo">
     <div id="footer">
         <div class="footer-left">
